@@ -6,7 +6,7 @@ int sum(int arr[],int index)
 }
 int main()
 {
-    int arr[]={4,7,9,10,6,21};
+    int arr[]={400,7,9,10,6,21};
     int total=0;
     for(int i=0;i<6;i++)
     total+=sum(arr,i);
