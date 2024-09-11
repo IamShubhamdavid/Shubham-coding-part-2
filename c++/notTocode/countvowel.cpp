@@ -11,7 +11,7 @@ int count(string str,int index)
 }
 int main()
 {
-    string str="aditi";
-    cout<<count(str,4)<<endl;
+    string str="ishu";
+    cout<<count(str,3)<<endl;
     return 0;
 }
