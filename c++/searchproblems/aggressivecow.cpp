@@ -1,11 +1,12 @@
 #include<iostream>
 using namespace std;
-int stalls[],n,k;
+int stalls[],n,k,start;
 int end=stalls[n-1]-stalls[0];
 while(start<=end)
 {
-    mid=start+(end-start)/2;
-    int count=1;pos=stalls[0];
+    int mid=start+(end-start)/2;
+    int count=1;
+    int pos=stalls[0];
     for(int i=1;i<n;i++)
     {
         if(pos+mid<=stalls[i])
