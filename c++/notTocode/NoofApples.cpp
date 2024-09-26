@@ -1,9 +1,9 @@
 #include<iostream>
 using namespace std;
 int main(){
-    int mango;
-    cin>>mango;
-    cout<<"number of mangoes are:"<<mango<<endl;
+    int apple;
+    cin>>apple;
+    cout<<"number of apples are:"<<apple<<endl;
     //cout<<apples;
     return 0;
 }
