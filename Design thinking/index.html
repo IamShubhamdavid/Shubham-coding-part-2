@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book MyEvent </title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Book My Event</div>
+        <nav class="nav-links">
+            <a href="#" class="active">Location</a>
+            <a href="#">Date</a>
+            <a href="#">No of Guests</a>
+            <!-- <a href="#"></a>
+            <a href="#">Activities</a> -->
+        </nav>
+        <div class="user-actions">
+            <button class="login-btn">Sign in</button>
+        </div>
+    </header>
+
+    <div class="booking-container">
+        <div class="trip-toggle">
+            <button class="trip-option active" id="one-way">One Way</button>
+            <button class="trip-option" id="round-trip">Round Trip</button>
+        </div>
+
+        <div class="search-box">
+            <div class="input-group">
+                <div class="input-field">
+                    <label>From</label>
+                    <input type="text" placeholder="City" id="from-city">
+                </div>
+                <button class="swap-btn" id="swap-cities">
+                    <i class="fas fa-exchange-alt"></i>
+                </button>
+                <div class="input-field">
+                    <label>To</label>
+                    <input type="text" placeholder="Destination city" id="to-city">
+                </div>
+            </div>
+
+            <div class="date-group">
+                <div class="input-field">
+                    <label>Departure</label>
+                    <input type="date" id="depart-date">
+                </div>
+                <div class="input-field return-date">
+                    <label>Return</label>
+                    <input type="date" id="return-date" disabled>
+                </div>
+            </div>
+
+            <div class="traveler-class">
+                <div class="input-field">
+                    <label>Travelers & Class</label>
+                    <input type="text" placeholder="1 Adult, Economy" id="travelers-input">
+                    <div class="traveler-dropdown" id="traveler-dropdown">
+                        <div class="passenger-type">
+                            <span>Adults (12+)</span>
+                            <div class="counter">
+                                <button class="count-btn" id="adult-minus">-</button>
+                                <span id="adult-count">1</span>
+                                <button class="count-btn" id="adult-plus">+</button>
+                            </div>
+                        </div>
+                        <div class="passenger-type">
+                            <span>Children (2-12)</span>
+                            <div class="counter">
+                                <button class="count-btn" id="child-minus">-</button>
+                                <span id="child-count">0</span>
+                                <button class="count-btn" id="child-plus">+</button>
+                            </div>
+                        </div>
+                        <div class="class-selection">
+                            <button class="class-option active">Economy</button>
+                            <button class="class-option">Premium Economy</button>
+                            <button class="class-option">Business</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="search-btn" id="search-flights">
+                <i class="fas fa-search"></i> SEARCH FLIGHTS
+            </button>
+        </div>
+    </div>
+
+    <div class="deals-section">
+        <h2>Today's Best Deals</h2>
+        <div class="deals-grid">
+            <div class="deal-card">
+                <img src="https://via.placeholder.com/300x150" alt="Deal 1">
+                <h3>Mumbai to Delhi</h3>
+                <p>From ₹2,499</p>
+            </div>
+            <div class="deal-card">
+                <img src="https://via.placeholder.com/300x150" alt="Deal 2">
+                <h3>Bangalore to Goa</h3>
+                <p>From ₹3,999</p>
+            </div>
+            <div class="deal-card">
+                <img src="https://via.placeholder.com/300x150" alt="Deal 3">
+                <h3>Delhi to Dubai</h3>
+                <p>From ₹14,999</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="first.js"></script>
+</body>
+</html>
